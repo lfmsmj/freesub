@@ -20,7 +20,7 @@ proxies:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 02 - xiaohe
   type: vless
-  server: 45.141.234.138
+  server: 188.114.97.6
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
@@ -29,7 +29,7 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /?
     headers:
       Host: edgetunnel-4uw.pages.dev
 proxy-groups:
