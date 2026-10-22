@@ -30,6 +30,19 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - xiaohe
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -43,20 +56,7 @@ proxies:
   ws-opts:
     path: ''
     headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
+      Host: in-152.67.8.205-0250
 - name: 🇮🇳 印度 (India) 05 - xiaohe
   type: vless
   server: 13.140.56.100
@@ -108,36 +108,6 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 09 - xiaohe
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: in-152.67.8.205-0250
-- name: 🇮🇳 印度 (India) 10 - xiaohe
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇮🇳 印度 (India) 11 - xiaohe
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -150,7 +120,7 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 12 - xiaohe
+- name: 🇮🇳 印度 (India) 10 - xiaohe
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -178,8 +148,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 08 - xiaohe
   - 🇮🇳 印度 (India) 09 - xiaohe
   - 🇮🇳 印度 (India) 10 - xiaohe
-  - 🇮🇳 印度 (India) 11 - xiaohe
-  - 🇮🇳 印度 (India) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -195,7 +163,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 08 - xiaohe
   - 🇮🇳 印度 (India) 09 - xiaohe
   - 🇮🇳 印度 (India) 10 - xiaohe
-  - 🇮🇳 印度 (India) 11 - xiaohe
-  - 🇮🇳 印度 (India) 12 - xiaohe
 rules:
 - MATCH,PROXIES
